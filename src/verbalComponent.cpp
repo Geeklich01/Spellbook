@@ -17,7 +17,7 @@ std::string verbalComponent::scramble(std::string spellName)
 {
     std::string remnantName = spellName;
     std::string verbalComponent = "";
-    while (remnantName.length() > LEAVE_OUT) // 
+    while (remnantName.length() > LEAVE_OUT)
     {
         int index = rand() % remnantName.length();
         verbalComponent.append(remnantName.substr(index, 1));

@@ -9,10 +9,16 @@ int main()
     std::cout << "What spell would you like to cast?" << std::endl;
     getline(std::cin, spellName);
     // printf("Spell lenght is: %d\n", verbalComponent::getSpellNameLength(spellName));
-    std::cout << "Here's what you could say to cast it!" << std::endl;
-    for (int i = 0; i < 5; i++)
+    if (spellName.length() > 2)
     {
-        std::cout << verbalComponent::scramble(spellName) << std::endl;
+        std::cout << "Here's what you could say to cast it!" << std::endl;
+        for (int i = 0; i < 5; i++)
+        {
+            std::cout << verbalComponent::scramble(spellName) << std::endl;
+        }
+    } else 
+    {
+        std::cout << "What an odd Spell!!!" << std::endl;
     }
     
     // printf("Spell lenght is: %d\n", verbalComponent::getSpellNameLength(verbalComponent));
