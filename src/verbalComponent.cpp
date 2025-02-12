@@ -1,12 +1,6 @@
 #include "verbalComponent.h"
 
-verbalComponent::verbalComponent()
-{
-}
-
-verbalComponent::~verbalComponent()
-{
-}
+verbalComponent::verbalComponent() {}
 
 int verbalComponent::getSpellNameLength(std::string spellName)
 {
@@ -38,7 +32,6 @@ std::string verbalComponent::scramble(std::string spellName)
 
 std::string verbalComponent::normalize(std::string str)
 {
-    // std::transform(str.begin(), str.end(), str.begin(), [](unsigned char c){ return std::tolower(c); });
     for (int i = 0; i < str.length(); i++)
     {
         str[i] = tolower(str[i]);

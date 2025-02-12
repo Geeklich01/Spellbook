@@ -1,5 +1,7 @@
 # Directories
 bin
+build
 
 # Files
 .DS_Store
+.vscode

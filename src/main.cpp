@@ -8,7 +8,6 @@ int main()
     std::string spellName;
     std::cout << "What spell would you like to cast?" << std::endl;
     getline(std::cin, spellName);
-    // printf("Spell lenght is: %d\n", verbalComponent::getSpellNameLength(spellName));
     if (spellName.length() > 2)
     {
         std::cout << "Here's what you could say to cast it!" << std::endl;
@@ -21,6 +20,5 @@ int main()
         std::cout << "What an odd Spell!!!" << std::endl;
     }
     
-    // printf("Spell lenght is: %d\n", verbalComponent::getSpellNameLength(verbalComponent));
     return 0;
 }
