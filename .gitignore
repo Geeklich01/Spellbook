@@ -1,7 +1,17 @@
 # Directories
-bin
-build
+bin/
+build/
 
-# Files
+# IDE & Editor files.
+.idea/
+*.iml
+*.iws
+.classpath
+.project
+.settings/
+.vscode/
+
+# Language Server & other temporary files.
+.cache/
+.log
 .DS_Store
-.vscode
